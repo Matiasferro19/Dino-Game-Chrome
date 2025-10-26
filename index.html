@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Dino</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- 🎮 Contenedor de botones de dificultad -->
+  <div class="difficulty-container">
+    <button class="difficulty-btn" data-speed="4">Easy</button>
+    <button class="difficulty-btn" data-speed="6">Medium</button>
+    <button class="difficulty-btn" data-speed="8">Hard</button>
+  </div>
+
+  <!-- 🌵 Mundo del juego -->
+  <div class="world">
+    <p id="score">Score: 0</p>
+    <img id="dino" src="images/dino-stationary.png" alt="Dino">
+    <img id="cactus" src="images/cactus.png" alt="Cactus">
+  </div>
+
+  <!-- 🦖 Pantalla "Sin conexión a Internet" -->
+  <div class="offline-screen">
+    <h1>Sin conexión a Internet</h1>
+    <p>Prueba a:</p>
+    <ul>
+      <li>Comprobar los cables de red, el módem y el router.</li>
+      <li>Volver a conectarte a una red Wi-Fi.</li>
+      <li>Ejecutar diagnósticos de red de Windows.</li>
+    </ul>
+    <p class="error-code">ERR_INTERNET_DISCONNECTED</p>
+
+    <!-- Botón About -->
+    <button id="about-btn">About</button>
+  </div>
+
+  <!-- Modal About -->
+  <div id="about-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>About this project</h2>
+      <p>
+  <p>
+  Este proyecto es una recreación del clásico mensaje “Sin conexión a Internet” de Google Chrome,
+  junto con el juego del dinosaurio. Hecho con HTML, CSS y JavaScript como práctica personal
+  para mejorar diseño y animaciones. <br><br>
+  Tecnologías y herramientas utilizadas:
+  <ul>
+    <li>💻 StackBlitz (para prototipado rápido y prueba del proyecto)</li>
+    <li>🎨 Google Fonts (fuentes VT323 para estilo retro/gamer)</li>
+    <li>🛠 Librería SweetAlert2 (para los modales de Game Over y dificultad)</li>
+    <li>🌐 Font Awesome (para los íconos sociales de GitHub y LinkedIn)</li>
+    <li>🤖 IA / ChatGPT (asistencia en lógica y diseño de funciones)</li>
+  </ul>
+</p>
+
+</p>
+<p class="autor">
+  Autor: Matias — 
+  <a href="https://github.com/Matiasferro19" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/ferromatias" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</p>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Librería SweetAlert2-->
+  <script src="script.js"></script>
+</body>
+</html>

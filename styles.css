@@ -1,0 +1,223 @@
+/* Estilos generales del mundo */
+.world {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: 50px auto;
+  overflow: hidden;
+  background-image: url('images/ground.png'); /* foto del suelo */
+  background-repeat: repeat-x;               /* se repite horizontalmente */
+  background-position: bottom;               /* queda en la parte inferior */
+  background-size: contain;                  /* opcional: ajusta el tamaño */
+}
+
+
+
+/* Estilos del Dino */
+#dino {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Estilos del Cactus */
+#cactus {
+  position: absolute;
+  bottom: 0;
+  left: 500px;
+  width: 20px;
+  height: 40px;
+}
+
+/*Estilos Score*/
+#score{
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+
+}
+/*Estilos Game Over*/
+
+.titulo-gameover {
+  font-family: 'VT323', monospace;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e6edf3;
+}
+
+.popup-gameover {
+  font-family: 'VT323', monospace;
+  border: 2px solid #000;  /* borde negro */
+  background-color: #0d1117;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* sutil profundidad */
+  border-radius: 10px;
+}
+
+/* 🎮 Estilo del botón Reintentar */
+.boton-reintentar {
+  font-family: 'VT323', monospace;
+  background-color: #000 !important; /* fondo negro */
+  color: #e6edf3 !important;          /* texto claro */
+  border: 2px solid #222 !important;  /* borde gris oscuro */
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.boton-reintentar:hover {
+  background-color: #111 !important; /* leve brillo al pasar el mouse */
+}
+
+/*Estilos botones Dificultad*/
+
+.difficulty-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.difficulty-btn {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  background-color: #000;
+  color: #e6edf3;
+  border: 2px solid #222;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.difficulty-btn:hover {
+  background-color: #111;
+}
+
+/*Estilos parte Offline*/
+
+.offline-screen {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #555;
+  text-align: left;
+  width: 400px;
+  margin: 80px auto;
+}
+
+.offline-dino {
+  width: 70px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.offline-screen h1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offline-screen p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.offline-screen ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.offline-screen li {
+  margin-bottom: 4px;
+}
+
+.error-code {
+  color: #777;
+  font-size: 12px;
+}
+
+/* Estilos Botón About */
+#about-btn {
+  margin-top: 15px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Estilos Modal */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6); /* fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: #000000;
+  color:#ffffff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+/*Estilos parte Autor*/
+
+.autor {
+  background-color: #f0f3f7;   /* fondo claro suave */
+  color: #111;                 /* texto oscuro pero no negro puro */
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-family: 'VT323', monospace; /* mantiene la estética gamer */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                   /* separación entre texto e íconos */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* ligera profundidad */
+}
+
+.autor a {
+  color: inherit;              /* hereda el color del texto */
+  margin-left: 5px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.autor a:hover i {
+  transform: scale(1.2);       /* efecto de agrandamiento al pasar el mouse */
+  color: #3b82f6;              /* azul suave al pasar el mouse */
+}
+
+.autor i {
+  font-size: 1.4em;            /* íconos un poco más grandes */
+  vertical-align: middle;
+}
+
